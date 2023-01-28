@@ -52,7 +52,7 @@ def solve(rules, goal):
                         else:
                             if con(goal, f'{gen[0]}v{gen[1]}'):
                                 temp.append(f'{gen[0]}v{gen[1]}')
-                                steps[''] = f"Solved {temp[i]} and {temp[j]} to {temp[-1]}, hence is not null. \
+                                steps[''] = f"Solved {temp[i]} and {temp[j]} to {temp[-1]}, hence is null. \
                                 \ncon when {negation(goal)} is true. So {goal} is true."
                                 return steps
                     elif len(gen) == 1:
